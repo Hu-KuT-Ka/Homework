@@ -1,0 +1,189 @@
+.container {
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+}
+
+
+.NewtonGif {
+    margin-top: 100px;
+    width: 1000px;
+    height: 500px;
+}
+
+
+.ball1 {
+    background: rgb(183, 183, 183);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 50%;
+    animation: left-circle 5s linear infinite;
+    top: -820px;
+    left: 300px;
+    
+}
+
+.ball2 {
+    background: rgb(183, 183, 183);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 50%;
+    animation: right-circle 5s linear infinite;
+    top:  -920px;
+    left: 700px;
+}
+
+.ball3 {
+    background: rgb(183, 183, 183);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 50%;
+    top:  -820px;
+    left: 400px;
+}
+
+.ball4 {
+    background: rgb(183, 183, 183);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 50%;
+    top: -920px;
+    left: 500px;
+}
+.ball5 {
+    background: rgb(183, 183, 183);
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 50%;
+    top: -1020px;
+    left: 600px;
+}
+.top {
+    width: 700px;
+    height: 20px;
+    background: grey;
+    margin-top: 100px;
+    margin-left: 200px;
+    position: absolute;
+}
+
+
+.left {
+    width: 20px;
+    height: 300px;
+    background: grey;
+    margin-top: 110px;
+    margin-left: 200px;
+    position: absolute;
+}
+
+.right {
+    width: 20px;
+    height: 300px;
+    background: grey;
+    margin-top: 110px;
+    margin-left: 880px;
+    position: absolute;
+}
+
+.rope1, .rope2, .rope3, .rope4, .rope5 {
+    height: 180px;
+    width: 4px;
+    background: rgb(123, 117, 117);
+    position: relative;
+}
+
+.rope1 {
+    top: 10px;
+    left: 350px;
+    animation: rope1 5s linear infinite;
+    
+}
+.rope2 {
+    top: -70px;
+    left: 450px;
+}
+.rope3 {
+    top: -250px;
+    left: 550px;
+}
+.rope4 {
+    top: -430px;
+    left: 650px;
+}
+.rope5 {
+    top: -710px;
+    left: 750px;
+    animation: rope2 5s linear infinite;
+}
+
+@keyframes left-circle {
+    0%{
+        transform: rotate(90deg) translateX(200px);
+    }
+    25%{
+        transform: rotate(180deg) translateX(200px); 
+    }
+    50%{
+        transform: rotate(90deg) translateX(200px);
+    }
+    100%{
+        transform: rotate(90deg) translateX(200px);
+    }
+}
+
+@keyframes right-circle {
+
+    0%{
+        transform: rotate(90deg) translateX(200px);
+    }
+    50%{
+        transform: rotate(90deg) translateX(200px); 
+    }
+    75%{
+        transform: rotate(0deg) translateX(200px);
+    }
+    100%{
+        transform: rotate(90deg) translateX(200px);
+    }
+
+}
+
+@keyframes rope1 {
+    0%{
+        transform: rotate(90deg) translateX(100px) translateY(0) rotate(90deg);
+    }
+    25%{
+        transform: rotate(135deg) translateX(100px) translateY(70px) rotate(135deg); 
+    }
+    50%{
+        transform: rotate(90deg) translateX(100px) translateY(0) rotate(90deg);
+    }
+    100%{
+        transform: rotate(90deg) translateX(100px) translateY(0) rotate(90deg);
+    }
+}
+
+@keyframes rope2 {
+
+    0%{
+        transform: rotate(450deg) translateX(100px) translateY(0) rotate(450deg);
+    }
+    50%{
+        transform: rotate(450deg) translateX(100px) translateY(0)  rotate(450deg); 
+    }
+    75%{
+        transform: rotate(405deg) translateX(100px) translateY(-70px) rotate(405deg);
+    }
+    100%{
+        transform: rotate(450deg) translateX(100px) translateY(0) rotate(450deg);
+    }
+
+}

@@ -1,0 +1,125 @@
+div {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+}
+
+.car {
+    width: 700px;
+    height: 425px;
+}
+
+.rectangle {
+    width: 550px;
+    height: 60px;
+    background-color: darkcyan;
+    position: absolute;
+    margin-bottom: 12px;
+    margin-top: 200px;
+    margin-left: 75px;
+}
+
+.round1, .round2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: darkcyan;
+    position: absolute;
+    border: 5px dotted black;
+}
+
+.round1 {
+    margin-left: 100px;
+    margin-top: 220px;
+}
+
+.round2 {
+    margin-right: 100px;
+    margin-left: 500px;
+    margin-top: 220px;
+}
+
+.round3 {
+    margin-right: 100px;
+    margin-left: 80px;
+    margin-top: 205px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    border: 1px solid black;
+}
+
+.round4 {
+    margin-left: 595px;
+    margin-top: 205px;
+    background-color: yellow;
+    position: absolute;
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.round5, .round6 {
+
+    border-radius: 50%;
+    background-color: orange;
+    position: absolute;
+    border: 1px solid black;
+}
+
+.round5 {
+    margin-right: 100px;
+    margin-left: 80px;
+    margin-top: 230px;
+    width: 20px;
+    height: 20px;
+}
+
+.round6 {
+    margin-left: 595px;
+    margin-top: 230px;
+    width: 20px;
+    height: 20px;
+}
+
+.trapeze1 {
+    margin-left: 133px;
+    margin-top: 103px;
+    width: 414px;
+    border-bottom: 107px solid darkcyan;
+
+    border-left: 27px solid transparent;
+    border-right: 67px solid transparent;
+    border-radius: 5%;
+    position: absolute;
+}
+
+.trapeze2 {
+    margin-left: 175px;
+    margin-top: 118px;
+    width: 145px;
+    border-bottom: 80px solid bisque;
+    border-left: 15px solid transparent;
+    border-radius: 10px;
+    position: absolute;
+
+}
+
+.trapeze3 {
+    margin-left: 360px;
+    margin-top: 118px;
+    width: 145px;
+    border-bottom: 80px solid bisque;
+    border-right: 35px solid transparent;
+    border-radius: 10px;
+    position: absolute;
+}
