@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Формуляр читателя в библиотеке UPDATE</title>
+    <link rel="stylesheet" href="static/styles/normalize.css" />
+    <link rel="stylesheet" href="static/styles/style.css" />
+
+</head>
+
+<body>
+    <div class="container tablet">
+        <form id="registration">
+                <h1>Формуляр читателя библиотеки (Update)</h1>
+                <div class="tablet">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><span class="star">*</span>№</td>
+                                <td><textarea id="book_number1" name="book_number" rows="2" cols="4"></textarea></td>
+                                <td><textarea id="book_number2" name="book_number" rows="2" cols="4"></textarea></td>
+                                <td><textarea id="book_number3" name="book_number" rows="2" cols="4"></textarea></td>
+                                <td><textarea id="book_number4" name="book_number" rows="2" cols="4"></textarea></td>
+                                <td><textarea id="book_number5" name="book_number" rows="2" cols="4"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><span class="star">*</span>Год</td>
+                                <td><textarea id="book_number6" name="book_number" rows="2" cols="4"></textarea></td>
+                                <td><textarea id="book_number7" name="book_number" rows="2" cols="4"></textarea></td>
+                                <td><textarea id="book_number8" name="book_number" rows="2" cols="4"></textarea></td>
+                                <td><textarea id="book_number9" name="book_number" rows="2" cols="4"></textarea></td>
+                                <td><textarea id="book_number0" name="book_number" rows="2" cols="4"></textarea></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </form>
+        <br>
+        <div class="tablet">
+            <form>
+                <label for='username'><span class="star">*</span>Фамилия:</label><br>
+                <input type='text' id='surname' name='surname' placeholder="*Фамилия" class="surname" /><br>
+                <label for='name'><span class="star">*</span>Имя:</label><br>
+                <input type='text' id='name' name='name' placeholder="*Имя" class="name" /><br>
+                <label for='patronymic'>Отчество:</label><br>
+                <input type='text' id='patronymic' name='patronymic' placeholder="Отчество" class="patronymic" /><br>
+                <label for='birth_date'><span class="star">*</span>Дата рождения:</label><br>
+                <input type="date" id="birth_date" class="birth_date"><br>
+                <label for='education'><span class="star">*</span>Образование</label><br>
+                <select name="select" id="select" class="education">
+                    <option value="Основное общее образование (9 классов)" selected>Основное общее образование (9 классов)</option>
+                    <option value="Начальное общее образование (4 класса)">Начальное общее образование (4 класса)</option>
+                    <option value="Среднее общее образование (11 классов)">Среднее общее образование (11 классов)</option>
+                    <option value="Среднее профессиональное образование">Среднее профессиональное образование</option>
+                    <option value="Высшее профессиональное образование">Высшее профессиональное образование</option>
+                    <option value="Другое">Другое</option>
+                </select><br>
+                <label for='work_place'>Место работы:</label><br>
+                <input type='text' id="work_place" class="work_place" placeholder="Место работы"><br>
+                <label for='tel'><span class="star">*</span>Контактный телефон:</label><br>
+                <input type='tel' id='tel' name='tel' placeholder="*Номер телефона 8 (___) ___-__-__" class="tel" /><br>
+                <label for='adress'><span class="star">*</span>Домашний адрес:</label><br>
+                <input type='text' id='adress' name='adress' placeholder="*Домашний адрес" class="adress" /><br>
+                <label for='email'>Адрес электронной почты:</label><br>
+                <input type='email' id='email' name='email' placeholder="Адрес электронной почты" class="email" /><br><br>
+                <fieldset>
+                    <legend>Предоставьте согласия</legend>
+                    <label style="display: flex;"><input type="checkbox"
+                            value="Согласен(на) на обработку персональных данных" id="pers_data" required><span
+                            class="star">*</span> Я согласен(на) на обработку
+                        персональных данных</label>
+                    <label style="display: flex;"><input type="checkbox"
+                            value="Согласен(на) на получение информации по электронной почте" id="inform"><br> Я
+                        согласен(на) на получение
+                        информации по электронной почте</label>
+                    <input type="reset" value="Сбросить согласия" class="reset_button">
+                </fieldset>
+            </form>
+        </div>
+        <p>
+        <div class="desktop tablet">
+            <form>
+                <button class="send_button" type="button" onclick="submitForm()">Отправить формуляр в
+                    библиотеку</button>
+            </form>
+        </div>
+        </p>
+        <div id="output">
+        </div>
+    </div>
+    <script src="static/styles/scripts.js"></script>
+</body>
+
+</html>
